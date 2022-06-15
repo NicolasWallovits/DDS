@@ -1,0 +1,6 @@
+Notas:
+------
+
+Quería dejar una aclaración... Particularmente para esta entrega me pasó que entendí bien los conceptos teóricos, y tengo bastante claro qué quiero hacer, pero muchas dudas en cuanto a cómo implementarlo. Como para aclarar la idea general de la resolución, lo que quise hacer es que la lista de las alertas actuales sea el sujeto observado. Esta lista que se encuentra dentro de una clase que a su vez es singleton, porque las alertas son únicas en el sistema y no pareciera interesarme tener dos inputs de aleras conviviendo.
+
+Luego las distintas acciones configurables del usuario, recibir notificaciones, recibir mails y recalcular las sugerencias de atuendo, serían los observers antes un cambio en la lista de alerta. Entonces de esa manera son configurables porque puedo agregar a las acciones / eliminarlas como observers de mi sujeto (o sea un usuario podría elegir encender o apagar notificaciones por ejemplo), y ante un evento de cambio de la lista de alertas van a ser notificados y van a responder acorde a ello.
